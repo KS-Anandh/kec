@@ -11,6 +11,7 @@ const RegistrationPage = () => {
    function validate(){
     if(reg!=null){
       setValid(true);
+      console.log(mail)
     }
    }
   return (
@@ -23,7 +24,7 @@ const RegistrationPage = () => {
         <div className="title">
             <h2>Student Registration</h2>
        </div>
-       <form className="form" action='/' >
+       <form className="form"  >
         <label> Enter Your Reg-no:</label>
         <input type="text" onChange={(data)=>{
           setReg(data.target.value)
@@ -38,7 +39,7 @@ const RegistrationPage = () => {
         }} placeholder=" Enter the Password"required/>
         <p style={{color:'rgb(219, 43, 43)',fontWeight:'600',cursor: 'pointer'}}>Forget Pasword</p>
         <p> If incase your already visited means please Sign-in with same Your mail and password</p>
-        <input type="submit" onClick={validate} value="Sign-up"/>
+        <Link to={`/kec/login/${mail}`} onClick={validate}>Sign-in</Link>
        </form>
         <form className="form1" action="login"><Link to="/login" >Sign-in</Link></form>
     </div>

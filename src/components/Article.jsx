@@ -2,7 +2,7 @@ import React from 'react'
 import Service from './Service'
 import clg from '../assets/images/college.jpeg'
 import News from './News'
-import Place from './Place'
+
 const Article = () => {
   return (
     <>
@@ -29,7 +29,7 @@ const Article = () => {
            <News end="false" title="Anthariksha 2K24" summary=" Anthariksha 2K24 Symposium Condected in Our College CSE Department. Here Conducted Paper Presentation,Web-Design,Code Debugging and Non-technical Events" />
            <News end="true" title="MSME Project" summary="In Our College one Project Idea was Select in MSME and now that is in Progress and  that will be Monitoring by Dr.Kodanda Ramayya Phd (ECE-HOD and R&D Director)"/>
     </div>
-    <a className='news_more' href="#">More..</a>
+    <a className='news_more' href="">More..</a>
     </div>
     </div>
     <div className='services'>
